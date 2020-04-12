@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AvatarImageView">
+        <attr name="aiv_borderColor" format="color"/>
+        <attr name="aiv_borderWidth" format="dimension"/>
+        <attr name="aiv_initials" format="string"/>
+        <attr name="aiv_src" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressStarsView">
+        <attr name="psv_star1_progress" format="integer"/>
+        <attr name="psv_star2_progress" format="integer"/>
+        <attr name="psv_star3_progress" format="integer"/>
+        <attr name="psv_stars_src" format="integer"/>
+        <attr name="psv_stars_size" format="dimension"/>
+        <attr name="psv_progress_bar" format="reference"/>
+        <attr name="psv_parent" format="reference"/>
+    </declare-styleable>
+</resources>
