@@ -15,5 +15,7 @@
         <attr name="psv_stars_size" format="dimension"/>
         <attr name="psv_progress_bar" format="reference"/>
         <attr name="psv_parent" format="reference"/>
+        <!--form 0 to 3-->
+        <attr name="psv_count_of_stars" format="integer"/>
     </declare-styleable>
 </resources>

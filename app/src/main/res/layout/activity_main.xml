@@ -12,7 +12,7 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="70dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="0dp"
@@ -23,17 +23,111 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:max="17"
+        android:progress="10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:max="200"
+        android:progress="20"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar_4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal"
+        android:max="10"
+        android:progress="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <com.tilseier.starsforprogressbar.ui.custom.ProgressStarsView
         android:id="@+id/progress_stars"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        app:psv_count_of_stars="3"
         app:psv_star1_progress="50"
         app:psv_star2_progress="80"
         app:psv_star3_progress="100"
         app:psv_stars_src="@drawable/star"
         app:psv_stars_size="23dp"
-        app:psv_progress_bar="@+id/horizontal_progress_bar"
         app:psv_parent="@+id/container"
+        app:psv_progress_bar="@+id/horizontal_progress_bar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.tilseier.starsforprogressbar.ui.custom.ProgressStarsView
+        android:id="@+id/progress_stars_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:psv_count_of_stars="2"
+        app:psv_star1_progress="8"
+        app:psv_star2_progress="12"
+        app:psv_star3_progress="16"
+        app:psv_stars_src="@drawable/star_2"
+        app:psv_stars_size="30dp"
+        app:psv_parent="@+id/container"
+        app:psv_progress_bar="@+id/horizontal_progress_bar_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.tilseier.starsforprogressbar.ui.custom.ProgressStarsView
+        android:id="@+id/progress_stars_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:psv_count_of_stars="3"
+        app:psv_star1_progress="30"
+        app:psv_star2_progress="100"
+        app:psv_star3_progress="150"
+        app:psv_stars_src="@drawable/long_image"
+        app:psv_stars_size="40dp"
+        app:psv_parent="@+id/container"
+        app:psv_progress_bar="@+id/horizontal_progress_bar_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.tilseier.starsforprogressbar.ui.custom.ProgressStarsView
+        android:id="@+id/progress_stars_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:psv_count_of_stars="2"
+        app:psv_star1_progress="3"
+        app:psv_star2_progress="7"
+        app:psv_star3_progress="10"
+        app:psv_stars_src="@drawable/long_image_2"
+        app:psv_stars_size="30dp"
+        app:psv_parent="@+id/container"
+        app:psv_progress_bar="@+id/horizontal_progress_bar_4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
